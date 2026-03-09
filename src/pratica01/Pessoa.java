@@ -60,18 +60,22 @@ public class Pessoa {
         this.IMC = (peso/Math.pow(altura,2));
      }
     
-    public void InformaObesidade(double IMC){
+    public void InformaObesidade(){
         if(IMC < 18.5){
             System.out.println("Abaixo do peso");
         } else if(IMC <= 24.9){
               System.out.println("Peso Normal");
+        } else if (IMC <= 29.9) {
+            System.out.println("Sobre Peso");
         } else if(IMC <= 34.9){
             System.out.println("Obesidade Grau 1");
     } else if(IMC <= 39.9){
             System.out.println("Obesidade Grau 2");
     } else if(IMC >= 40){
             System.out.println("Obesidade Grau 3");
-    }}   
+    }
+        System.out.println(IMC);
+   }
 }
 
     

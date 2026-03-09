@@ -19,6 +19,6 @@ public class Pratica01 {
        
        Pessoa p1 = new Pessoa(Name,Sobrenome,idade,altura,peso);
        p1.CalculaIMC(p1.getPeso(), p1.getAltura());
-       p1.InformaObesidade(p1.getIMC());      
+       p1.InformaObesidade();
     }
 }
