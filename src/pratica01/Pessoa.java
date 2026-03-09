@@ -1,3 +1,5 @@
+package pratica01;
+
 
 public class Pessoa {
     private String name;
@@ -55,7 +57,7 @@ public class Pessoa {
     }
     
     public void CalculaIMC(double peso,double altura){
-        this.IMC = (peso/altura);
+        this.IMC = (peso/Math.pow(altura,2));
      }
     
     public void InformaObesidade(double IMC){
@@ -69,9 +71,7 @@ public class Pessoa {
             System.out.println("Obesidade Grau 2");
     } else if(IMC >= 40){
             System.out.println("Obesidade Grau 3");
-    }
-    }
-    
+    }}   
 }
 
     

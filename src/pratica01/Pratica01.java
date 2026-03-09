@@ -1,3 +1,6 @@
+package pratica01;
+
+import pratica01.Pessoa;
 import java.util.Scanner;
 
 /**
@@ -15,8 +18,7 @@ public class Pratica01 {
        double peso = sc.nextDouble();
        
        Pessoa p1 = new Pessoa(Name,Sobrenome,idade,altura,peso);
-       CalculaIMC(p1.getPeso(), p1.getAltura());
-       InformaObesidade(p1.getIMC());      
+       p1.CalculaIMC(p1.getPeso(), p1.getAltura());
+       p1.InformaObesidade(p1.getIMC());      
     }
-    
 }
