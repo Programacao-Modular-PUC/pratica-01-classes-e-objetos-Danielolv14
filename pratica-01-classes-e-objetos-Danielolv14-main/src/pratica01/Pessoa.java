@@ -19,7 +19,7 @@ public class Pessoa {
        this.altura = altura;
        this.peso = peso;
        this.IMC = 0.0;
-       this.datanasc = datanasc;
+       this.datanasc = nasc;
    }
    
    String getName(){
@@ -66,7 +66,7 @@ public class Pessoa {
     
     public int calculaIdade(){
         Calendar c = Calendar.getInstance();
-        int idade = c.get(Calendar.YEAR) - this.datanasc.ano;
+        int idade = c.get(Calendar.YEAR) - datanasc.getAno();
         return idade;
     }
     
@@ -84,7 +84,7 @@ public class Pessoa {
     } else if(IMC >= 40){
             System.out.println("Obesidade Grau 3");
     }
-        System.out.println(IMC);
+
    }
 }
 
